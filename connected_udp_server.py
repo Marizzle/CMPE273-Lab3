@@ -18,8 +18,6 @@ class ConnectedUDPServer(DatagramProtocol):
         print("sent hello to client")
         print("######################################################")
 
-    # Possibly invoked if there is no server listening on the
-    # address to which we are sending.
     def connectionRefused(self):
         print("No one listening")
 
